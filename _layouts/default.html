@@ -2,30 +2,36 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 			<link rel="stylesheet" type="text/css" href="/css/skeleton.css">
 			<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+			<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		</head>
+		<div id="top">
+			<div class="row wide" id="header-row">
+				<div class="twelve columns">
+					<h1 class="header name-header centered">RICARDO ZAMUDIO II</h1>
+				</div>
+			</div>
+			
+			<div class="row wide" id="header-row">
+	    		<div class="two columns offset-by-two">
+	    			<a class="button u-full-width" href="/bio">BIO</a></li>
+	    		</div>
+	    		<div class="two columns">	
+	    			<a class="button u-full-width" href="/resume">RESUME</a></li>
+	    		</div>
+	    		<div class="two columns">
+	    			<a class="button u-full-width" href="/projects">PROJECTS</a></li>
+	    		</div>
+	    		<div class="two columns">
+	    			<a class="button u-full-width" href="/blog">BLOG</a></li>
+	    		</div>
+			</div>
+		</div>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:ricardo.ii.zamudio@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/zamud">github.com/zamud</a></li>
-				</ul>
-			</footer>
+			<div class="container" style="margin-top:10%">
+				{{ content }}
+			</div>
 		</body>
 	</html>
