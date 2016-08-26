@@ -1,4 +1,4 @@
 name: Ricardo Zamudio II
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-url: "http://www.zamud.github.io"
+baseurl: ""
